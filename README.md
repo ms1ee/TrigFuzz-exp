@@ -1,6 +1,6 @@
 # trigfuzz-exp
 
-## 1
+## 1. Obtain TCUs
 
 ```sh
 export OPENAI_BASE_URL="https://api.anthropic.com/v1/chat/completions"
@@ -12,7 +12,7 @@ python3 -B -m trigfuzz.tcgen work/cxxfilt-2016-4489 \
     --source libiberty/cplus-dem.c --k 1 --out work/cxxfilt-2016-4489/tcus.json
 ```
 
-## 2
+## 2. Build binary
 
 ```sh
 cd work/cxxfilt-2016-4489/source
@@ -27,7 +27,7 @@ CC=afl-gcc CXX=afl-g++ CFLAGS="-g -fno-omit-frame-pointer -Wno-error" \
     --disable-readline --disable-sim --disable-ld && make
 ```
 
-## 3
+## 3. Fuzz binary
 
 ```sh
 cd work/cxxfilt-2016-4489/source
