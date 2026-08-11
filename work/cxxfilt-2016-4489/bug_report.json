@@ -1,0 +1,4 @@
+{
+  "type": "Buffer Overflow with Integer Overflow",
+  "crash_points": ["line 3007 in cplus-dem.c"]
+}

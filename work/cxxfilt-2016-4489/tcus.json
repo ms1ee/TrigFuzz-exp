@@ -1,0 +1,42 @@
+[
+  {
+    "cond": "tf_bool(ISDIGIT((unsigned char)(*mangled)[0]))",
+    "loc": "line 2990 in cplus-dem.c",
+    "seq": 0,
+    "conj": 0,
+    "w": 1.0,
+    "distance_expr": "tf_bool(ISDIGIT((unsigned char)(*mangled)[0]))",
+    "save_index": 0,
+    "kind": "numeric"
+  },
+  {
+    "cond": "tf_ge((double)n, 0.0)",
+    "loc": "line 2992 in cplus-dem.c",
+    "seq": 1,
+    "conj": 0,
+    "w": 1.0,
+    "distance_expr": "tf_ge((double)n, 0.0)",
+    "save_index": 1,
+    "kind": "numeric"
+  },
+  {
+    "cond": "tf_le((double)n, (double)((int)strlen(*mangled)))",
+    "loc": "line 2997 in cplus-dem.c",
+    "seq": 2,
+    "conj": 0,
+    "w": 1.0,
+    "distance_expr": "tf_le((double)n, (double)((int)strlen(*mangled)))",
+    "save_index": 2,
+    "kind": "numeric"
+  },
+  {
+    "cond": "tf_gt((double)n, 1073741823.0)",
+    "loc": "line 3007 in cplus-dem.c",
+    "seq": 3,
+    "conj": 0,
+    "w": 1.0,
+    "distance_expr": "tf_gt((double)n, 1073741823.0)",
+    "save_index": 3,
+    "kind": "numeric"
+  }
+]
